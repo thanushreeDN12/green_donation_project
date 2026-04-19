@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# env files
+.env
+server/.env
+client/.env
+
+# builds
+build/
+dist/
+client/build/
+server/build/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editor/system
+.vscode/
+.DS_Store
+Thumbs.db
+
+plant/info.txt
