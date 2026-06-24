@@ -60,13 +60,13 @@ const signup= async (req, res) => {
 }
 
 const admin= async (req, res) => {
-    console.log("inside controller")
+    // console.log("inside controller")
     const {username, pw }= req.body
     console.log(username, pw)
     
     try{
         const oldUser= await Admin.findOne({username})
-        console.log(oldUser)
+        // console.log(oldUser)
         if(!oldUser){
             return res.status(400).json({message:'admin doesnot exists'})
         }
